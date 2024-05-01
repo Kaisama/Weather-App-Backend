@@ -168,10 +168,10 @@
         </div>
 
         <div class="info">
-            <h2 class="location"><i class="fas fa-street-view" style="color:#eccc68;"></i>Pune,In</h2>
-            <p id="date">WED | nov 23 | 10:49:45PM</p>
-            <h1 class="temp">23.34 C</h1>
-            <h3 class="tempmin_max">Min 26.49 | Max 26.49</h3>
+            <h2 class="location"><i class="fas fa-steet-view" style="color:#eccc68;"></i>{%location%} , {%country%}</h2>
+            <p id="date"></p>
+            <h1 class="temp">{%tempval%}℃</h1>
+            <h3 class="tempmin_max">Min {%tempmin%}℃| Max {%tempmax%}℃</h3>
         </div>
     </div>
 
@@ -192,7 +192,7 @@
             weekday[6]='Sat';
 
             let currentTime=new Date();
-            console.log(weekday[currentTime.getDay()]);
+           // console.log(weekday[currentTime.getDay()]);
             let day=weekday[currentTime.getDay()];
             return day;
         }
